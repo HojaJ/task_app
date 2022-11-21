@@ -16,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/cities', [TemperatureController::class, 'cities']);
-Route::get('/humidity', [TemperatureController::class, 'humidity']);
+Route::get('/humidity/{city}/{date}', [TemperatureController::class, 'chart']);
+Route::get('/wind_speed/{city}/{date}', [TemperatureController::class, 'chart']);
+Route::get('/temp/{city}/{date}', [TemperatureController::class, 'chart']);
 
 //Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //    return $request->user();

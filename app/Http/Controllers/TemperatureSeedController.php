@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\City;
 use App\Models\Temperature;
+use DateTime;
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
 use Illuminate\Support\Carbon;
@@ -20,11 +21,6 @@ class TemperatureSeedController extends Controller
     }
 
     public function seed_table(){
-
-//        $city = City::where('id', 1)->first();
-//        $temperature = $city->all_day_temp();
-//        dd($temperature);
-
         try {
             $cities = City::get();
             foreach ($cities as $city){
