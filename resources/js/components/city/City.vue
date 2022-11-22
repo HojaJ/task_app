@@ -1,6 +1,6 @@
 <template>
     <div class="card text-white mt-5">
-        <div class="card-body">
+        <div class="card-body px-2">
             <h5 class="mb-0 fs-6">{{ name }}</h5>
             <p>{{ country_code }}</p>
             <img :src="'http://openweathermap.org/img/w/' +  condition_icon  + '.png'"

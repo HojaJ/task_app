@@ -23,7 +23,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-         $schedule->command('seed:temperature')->everyTenMinutes();
+         $schedule->command('feed:temperature')->everyTenMinutes();
     }
 
     /**

@@ -101,6 +101,10 @@ function city_onchange(event) {
     border-bottom: 1px solid #EFECEC;
 }
 
+h1 sup {
+    color: #8497C9;
+}
+
 .title-color {
     color: #1B2767;
 }

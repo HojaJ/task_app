@@ -12,7 +12,7 @@ class SeedTemperature extends Command
      *
      * @var string
      */
-    protected $signature = 'seed:temperature';
+    protected $signature = 'feed:temperature';
 
     /**
      * The console command description.
@@ -29,6 +29,6 @@ class SeedTemperature extends Command
     public function handle()
     {
         $temperature = new TemperatureSeedController;
-        dd($temperature->seed_table());
+        echo $temperature->seed_table();
     }
 }
